@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0xD411354d6e3BE67F95ea327B1a10Aa80986fc1d8",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xD411354d6e3BE67F95ea327B1a10Aa80986fc1d8",
+  "NETWORK": {
+    "NAME": "Ethereum",
+    "SYMBOL": "ETH",
+    "ID": 4
+  },
+  "NFT_NAME": "Ganja Grow",
+  "SYMBOL": "GANJA",
+  "MAX_SUPPLY": 420,
+  "WEI_COST": 80000000000000000,
+  "DISPLAY_COST": 0.08,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opensea",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/ganja-grow-jfazzeqvan",
+  "SHOW_BACKGROUND": true
+}

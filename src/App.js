@@ -121,7 +121,7 @@ function App() {
   });
 
   const claimNFTs = () => {
-    let costAmount = 0.035;
+    let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(cost * mintAmount);
     let totalGasLimit = String(gasLimit * mintAmount);
@@ -166,21 +166,6 @@ function App() {
       newMintAmount = 50;
     }
     setMintAmount(newMintAmount);
-  };
-
-  const incrementCostAmount = () => {
-    let newCostAmount = costAmount + 0.005;
-    if (newMintAmount > 5) {
-      newCostAmount = 0.035;
-    }
-    if (newMintAmount > 10) {
-      newCostAmount = 0.04;
-    }
-    if (newMintAmount > 15) {
-      newCostAmount = 0.045;
-    }
-
-    setCostAmount(newCostAmount);
   };
 
   const getData = () => {

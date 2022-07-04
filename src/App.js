@@ -255,7 +255,7 @@ function App() {
                   margin: "5px",
                 }}
               >
-                SBUDS Home
+                Homepage
               </StyledButton>
               <StyledButton
                 style={{

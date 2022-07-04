@@ -112,8 +112,8 @@ function App() {
     NFT_NAME: "",
     SYMBOL: "",
     MAX_SUPPLY: 1,
-    // WEI_COST: 0,
-    // DISPLAY_COST: 0,
+    WEI_COST: 0,
+    DISPLAY_COST: 0,
     GAS_LIMIT: 0,
     MARKETPLACE: "",
     MARKETPLACE_LINK: "",
@@ -166,6 +166,30 @@ function App() {
       newMintAmount = 50;
     }
     setMintAmount(newMintAmount);
+  };
+
+
+    const decrementCost = () => {
+    let newCostAmount = costAmount - 0.005;
+    if (newCostAmount < 0.035) {
+      newCostAmount = 0.035;
+    }
+    setCostAmount(newCostAmount);
+  };
+
+  const incrementCostAmount = () => {
+    let newCostAmount = costAmount + 0.005;
+    if (newCostAmount > 5) {
+      newCostAmount = 0.035;
+    }
+    if (newCostAmount > 10) {
+      newCostAmount = 0.04;
+    }
+    if (newCostAmount > 15) {
+      newCostAmount = 0.045;
+    }
+
+    setCostAmount(newCostAmount);
   };
 
   const getData = () => {

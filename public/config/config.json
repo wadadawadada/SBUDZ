@@ -9,7 +9,8 @@
   "NFT_NAME": "SBUDZ",
   "SYMBOL": "SBUDZ",
   "MAX_SUPPLY": 5000,
-
+  "WEI_COST": 35000000000000000,
+  "DISPLAY_COST": 0.035,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opensea",
   "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/jillyjibbers",

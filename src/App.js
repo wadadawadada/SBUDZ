@@ -168,30 +168,6 @@ function App() {
     setMintAmount(newMintAmount);
   };
 
-
-    const decrementCost = () => {
-    let newCostAmount = costAmount - 0.005;
-    if (newCostAmount < 0.035) {
-      newCostAmount = 0.035;
-    }
-    setCostAmount(newCostAmount);
-  };
-
-  const incrementCostAmount = () => {
-    let newCostAmount = costAmount + 0.005;
-    if (newCostAmount > 5) {
-      newCostAmount = 0.035;
-    }
-    if (newCostAmount > 10) {
-      newCostAmount = 0.04;
-    }
-    if (newCostAmount > 15) {
-      newCostAmount = 0.045;
-    }
-
-    setCostAmount(newCostAmount);
-  };
-
   const getData = () => {
     if (blockchain.account !== "" && blockchain.smartContract !== null) {
       dispatch(fetchData(blockchain.account));

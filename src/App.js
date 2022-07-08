@@ -223,8 +223,6 @@ function App() {
             }}
           >
             <s.TextTitle
-              type="text"
-              placeholder="6"
               style={{
                 textAlign: "center",
                 fontSize: 50,

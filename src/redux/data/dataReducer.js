@@ -1,5 +1,5 @@
 const initialState = {
-  loading: false,
+  loading: true,
   totalSupply: 0,
   cost: 0,
   error: false,

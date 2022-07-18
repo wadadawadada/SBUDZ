@@ -8,6 +8,7 @@
     <meta name="theme-color" content="#000000" />
     <link rel="stylesheet" href="./config/theme.css" />
     <link rel="apple-touch-icon" href="./logo192.png" />
+    <link rel="stylesheet" href="./config/mintinfo.css"> 
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -27,6 +28,32 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+
+
+    <div id="app">
+      <div class="mintbox" v-cloak>
+        
+        <div class="mintinfo" v-if="minted">{{minted}}</div>
+        <div class="mintnft mintenable" v-show="ismintable"></div>
+        <div class="connect connectbtn" v-show="!isconnected"></div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3@1.2.11/dist/web3.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3modal@1.9.0/dist/index.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+    <script type="text/javascript"
+      src="https://unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js"></script>
+    
+    
+      <script src="./config/mintinfo.js"></script>
+
+
+
     <div id="root"></div>
     <!--
       This HTML file is a template.
